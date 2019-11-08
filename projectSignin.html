@@ -2,9 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>IP Project</title>
+		<title>Chord - Sign In</title>
 		<link rel="stylesheet" type="text/css" href="projectMain.css">
-		</head>
+		<link rel="icon" href="ChordNewVector.png">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">	
+	</head>
 	<body bgcolor="#222222">
 		<ul>
 			<li><a href="projectMain.html">Home</a></li>
@@ -12,14 +14,15 @@
 			<li><a href="projectGenres.html">Genres</a></li>
 			<li><a href="projectSignUp.html">Sign Up</a></li>
 			<li><a class="active" href="projectSignIn.html">Sign In</a></li>
+			<li><a id="nameBox"></a></li>
 		</ul>
 		<div class="loginbox">
 			<img src="avatar-icon-images-4.jpg" class="avatar"><br>
 			<h2 align="center">Login Here</h2>
-			<form  method="post" action="projectWelcome.php">
+			<form  method="post" name="signInForm" action="projectMain.html">
 				<table class="logintable" align="center">
 					<tr>
-						<td>Username</td>
+						<td class="s1">Username</td>
 						<td><input type="text" name="user_name" placeholder="Enter Username"></td>
 					</tr>
 					<tr>
@@ -27,7 +30,8 @@
 						<td><input type="password" name="password" placeholder="Enter Password"></td>
 					</tr>
 					<tr>
-						<td colspan="2"><input type="submit" name="Submit" value="Login" class="btnLogin"></td>
+						<td></td>
+						<td><input type="submit" name="Submit" value="LOGIN" class="btnLogin" onClick="showName()"></td>
 					</tr>
 				</table><br>
 				<span class="newUser">
