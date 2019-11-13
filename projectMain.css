@@ -1,6 +1,8 @@
 *{
-	font-family: 'Source Sans Pro', sans-serif;
 	color: white;
+	font-family: 'SF Pro Display';
+}
+a{
 	text-decoration: none;
 }
 ul{
@@ -52,7 +54,7 @@ span{
     text-decoration: none;
 }
 .Box{
-	margin-left: 40%;
+	margin-left: 39%;
 	margin-top: 1%;
 	position: absolute;
 	animation-fill-mode: forwards;
@@ -116,9 +118,8 @@ span{
 	height: 420px;
 	margin-top: 40px;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 14%;
+	left: 36%;
 	padding: 25px;
 	border: 3px solid #60DB00;
 	border-radius: 25px;
@@ -167,9 +168,11 @@ input.btnRegister {
 }
 img.albumCover{
 	opacity: 0.95;
+	border: 5px solid #222222;
 }
 img.albumCover:hover{
 	opacity: 1;
+	border: 5px solid #D9D9D9;
 }
 .A{
 	animation-name: genreI;
@@ -294,53 +297,91 @@ img.albumCover:hover{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.aboutDiv{
+	height: 630px; 
+	background-color: #D9D9D9;
+}
+.secondLogo{
+	height: 125px;
+}
+.mainLogo{
+	width: 150px;
+	margin-top: 7%;
+}
+.devDiv{
+	height: 630px; 
+	background-color: #222222;
+}
 .homeName{
-				font-size: 35px;
-				font-weight: normal;
-			}
-			.homeTag{
-				font-size: 40px;
-			}
-			
-			.sectionLightHeading{
-				color: #222222;
-				font-size: 30px;
-			}
-			.sectionLightContent{
-				color: #222222;
-				font-size: 20px;
-				margin-top:50px;
-				text-align: center;
-			}
-			.sectionDarkHeading{
-				color: #D9D9D9;
-				font-size: 30px;
-			}
-			.devCard{
-				background-color: #D9D9D9;
-				display: inline-block;
-				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  				max-width: 300px;
-				padding: 15px;
-				margin: 5px;
-  				color: #222222;
-				text-align: center;
-  			}
-			.devCardTitle{
-				color: #222222;
-				font-size: 24px;
-			}
-			.footerContent{
-				color: #222222;
-				margin:80px 100px 0px;
-				font-size: 18px;
-			}
-			.footerRight{
-				float: right;
-				margin-right: 80px;
-				color: #222222;
-				font-size: 20px;
-			}
+	font-size: 35px;
+	font-weight: normal;
+}
+.homeTag{
+	font-size: 40px;
+}
+.sectionLightHeading{
+	color: #222222;
+	font-size: 30px;
+}
+.sectionLightContent{
+	color: #222222;
+	font-size: 20px;
+	margin-top:50px;
+	text-align: center;
+}
+.sectionDarkHeading{
+	color: #D9D9D9;
+	font-size: 30px;
+}
+.devCard{
+	background-color: #D9D9D9;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(172,172,172,0.2);
+  	max-width: 300px;
+	padding: 15px;
+	margin: 5px;
+  	color: #222222;
+	text-align: center;
+}
+.devCardTitle{
+	color: #222222;
+	font-size: 24px;
+}
+.contactDiv{
+	height: 315px; 
+	background-color: #D9D9D9;
+}
+.footerContent{
+	color: #222222;
+	margin:80px 100px 0px;
+	font-size: 18px;
+}
+.footerRight{
+	color: #222222; 
+	float: right;
+}
+.gotoPopular{
+	padding: 10px;
+	float: right;
+	font-size: 16px;
+	margin-right: 40px;
+	margin-top: 100px;
+	border: 2px solid #60DB00;
+	background-color: #222222;
+}
+.gotoPopular:hover{
+	border: 2px outset #60DB00;
+}
+#mainOverlay{
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-color: rgba(172,172,172,0.95);
+	cursor: pointer;
+	text-align: center;
+}
 @keyframes boxI{
 	from{
 
@@ -516,4 +557,15 @@ img.albumCover:hover{
 	to{
 		transform: translate(300px, 900px);
 	}
+}
+@media (max-device-width: 572px){
+	.parallaxEffect{ height: 630px; }
+	.mainLogo{ width: 100px; margin-top: 130px; }
+	.homeName{ font-size: 25px; margin-top: 45px;}
+	.homeTag{ font-size: 30px; }
+	.aboutDiv{ height: 680px; }
+	.sectionLightContent{ text-align: center; width: 380px; margin-left: 50px; }
+	.secondLogo{  height: 90px; }
+	.devDiv{ height: 1170px; }
+	.footerRight{ margin-right:32px; }
 }
