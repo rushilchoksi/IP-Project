@@ -1,6 +1,6 @@
 *{
 	color: white;
-	font-family: 'SF Pro Display';
+	font-family: 'Roboto', sans-serif;
 }
 a{
 	text-decoration: none;
@@ -116,10 +116,8 @@ span{
 .loginbox {
 	width: 320px;
 	height: 420px;
-	margin-top: 40px;
+	margin: 65px 480px;
 	position: absolute;
-	top: 14%;
-	left: 36%;
 	padding: 25px;
 	border: 3px solid #60DB00;
 	border-radius: 25px;
@@ -221,6 +219,9 @@ img.albumCover:hover{
 .L{
 	animation-name: genreXII;
 	animation-duration: 0s;
+}
+.imgDiv{
+	height: 250px;
 }
 .tooltip {
   	display: inline-block;
@@ -359,6 +360,7 @@ img.albumCover:hover{
 .footerRight{
 	color: #222222; 
 	float: right;
+	margin-right: 100px;
 }
 .gotoPopular{
 	padding: 10px;
@@ -558,14 +560,197 @@ img.albumCover:hover{
 		transform: translate(300px, 900px);
 	}
 }
-@media (max-device-width: 572px){
+@media (max-width : 572px ){
 	.parallaxEffect{ height: 630px; }
 	.mainLogo{ width: 100px; margin-top: 130px; }
 	.homeName{ font-size: 25px; margin-top: 45px;}
 	.homeTag{ font-size: 30px; }
-	.aboutDiv{ height: 680px; }
-	.sectionLightContent{ text-align: center; width: 380px; margin-left: 50px; }
+	.aboutDiv{ height: 700px; }
+	.sectionLightContent{ text-align: center; width: 400px; margin: 50px 20px; }
 	.secondLogo{  height: 90px; }
 	.devDiv{ height: 1170px; }
-	.footerRight{ margin-right:32px; }
+	.devCard{ display: block; }
+	.footerContent{ margin:80px 70px 0px; text-align: center; }
+	.footerRight{ text-align: center; margin-right: 120px;}
+	.Box{ margin-left: 150px }
+	.imgDiv{ height: 125px; }
+	@keyframes boxI{
+		from{
+
+		}
+		to{
+			transform: translateX(-150px);
+		}
+	}
+	@keyframes boxII{
+		from{
+
+		}
+		to{
+			transform: translateX(150px);
+		}
+	}
+	@keyframes boxIII{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,150px);
+		}
+	}
+	@keyframes boxIV{
+		from{
+
+		}
+		to{
+			transform: translateY(150px);
+		}
+	}
+	@keyframes boxV{
+		from{
+
+		}
+		to{
+			transform: translate(150px,150px);
+		}
+	}
+	@keyframes boxVI{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,300px);
+		}
+	}
+	@keyframes boxVII{
+		from{
+
+		}
+		to{
+			transform: translateY(300px);
+		}
+	}
+	@keyframes boxVIII{
+		from{
+
+		}
+		to{
+			transform: translate(150px,300px);
+		}
+	}
+	@keyframes boxIX{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,450px);
+		}
+	}
+	@keyframes boxX{
+		from{
+
+		}
+		to{
+			transform: translateY(450px);
+		}
+	}
+	@keyframes boxXI{
+		from{
+
+		}
+		to{
+			transform: translate(150px, 450px);
+		}
+	}
+	@keyframes genreI{
+		from{
+
+		}
+		to{
+			transform: translateX(-150px);
+		}
+	}
+	@keyframes genreII{
+		from{
+
+		}
+		to{
+			transform: translateX(150px);
+		}
+	}
+	@keyframes genreIII{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,150px);
+		}
+	}
+	@keyframes genreIV{
+		from{
+
+		}
+		to{
+			transform: translateY(150px);
+		}
+	}
+	@keyframes genreV{
+		from{
+
+		}
+		to{
+			transform: translate(150px,150px);
+		}
+	}
+	@keyframes genreVI{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,300px);
+		}
+	}
+	@keyframes genreVII{
+		from{
+
+		}
+		to{
+			transform: translateY(300px);
+		}
+	}
+	@keyframes genreVIII{
+		from{
+
+		}
+		to{
+			transform: translate(150px,300px);
+		}
+	}
+	@keyframes genreIX{
+		from{
+
+		}
+		to{
+			transform: translate(-150px,450px);
+		}
+	}
+	@keyframes genreX{
+		from{
+
+		}
+		to{
+			transform: translateY(450px);
+		}
+	}
+	@keyframes genreXI{
+		from{
+
+		}
+		to{
+			transform: translate(150px, 450px);
+		}
+	}
+	.loginbox{ width: 320px;
+	height: 420px;
+	margin: 65px 25px; }
 }
