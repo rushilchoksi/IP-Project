@@ -298,9 +298,12 @@ img.albumCover:hover{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.homeScreen{
+	height: 100%;
+}
 .aboutDiv{
 	height: 630px; 
-	background-color: #D9D9D9;
+	background-color: #222222;
 }
 .secondLogo{
 	height: 125px;
@@ -311,7 +314,7 @@ img.albumCover:hover{
 }
 .devDiv{
 	height: 630px; 
-	background-color: #222222;
+	background-color: #D9D9D9;
 }
 .homeName{
 	font-size: 35px;
@@ -321,44 +324,44 @@ img.albumCover:hover{
 	font-size: 40px;
 }
 .sectionLightHeading{
-	color: #222222;
-	font-size: 30px;
-}
-.sectionLightContent{
-	color: #222222;
-	font-size: 20px;
-	margin-top:50px;
-	text-align: center;
-}
-.sectionDarkHeading{
 	color: #D9D9D9;
 	font-size: 30px;
 }
+.sectionLightContent{
+	color: #D9D9D9;
+	font-size: 20px;
+	margin-top: 50px;
+	text-align: center;
+}
+.sectionDarkHeading{
+	color: #222222;
+	font-size: 30px;
+}
 .devCard{
-	background-color: #D9D9D9;
+	background-color: #222222;
 	display: inline-block;
 	box-shadow: 0 4px 8px 0 rgba(172,172,172,0.2);
   	max-width: 300px;
 	padding: 15px;
 	margin: 5px;
-  	color: #222222;
+  	color: #D9D9D9;
 	text-align: center;
 }
 .devCardTitle{
-	color: #222222;
+	color: #D9D9D9;
 	font-size: 24px;
 }
 .contactDiv{
 	height: 315px; 
-	background-color: #D9D9D9;
+	background-color: #222222;
 }
 .footerContent{
-	color: #222222;
+	color: #D9D9D9;
 	margin:80px 100px 0px;
 	font-size: 18px;
 }
 .footerRight{
-	color: #222222; 
+	color: #D9D9D9; 
 	float: right;
 	margin-right: 100px;
 }
@@ -562,17 +565,18 @@ img.albumCover:hover{
 }
 @media (max-width : 572px ){
 	.parallaxEffect{ height: 630px; }
-	.mainLogo{ width: 100px; margin-top: 130px; }
+	.mainLogo{ width: 100px; margin-top: 180px; }
+	.gotoPopular{ margin-top: 230px; }
 	.homeName{ font-size: 25px; margin-top: 45px;}
 	.homeTag{ font-size: 30px; }
-	.aboutDiv{ height: 700px; }
-	.sectionLightContent{ text-align: center; width: 400px; margin: 50px 20px; }
+	.aboutDiv{ height: 840px; }
+	.sectionLightContent{ text-align: center; width: 400px; margin: 50px 70px; }
 	.secondLogo{  height: 90px; }
 	.devDiv{ height: 1170px; }
 	.devCard{ display: block; }
 	.footerContent{ margin:80px 70px 0px; text-align: center; }
 	.footerRight{ text-align: center; margin-right: 120px;}
-	.Box{ margin-left: 150px }
+	.Box{ margin-left: 200px }
 	.imgDiv{ height: 125px; }
 	@keyframes boxI{
 		from{
@@ -752,5 +756,5 @@ img.albumCover:hover{
 	}
 	.loginbox{ width: 320px;
 	height: 420px;
-	margin: 65px 25px; }
+	margin: 85px; }
 }
