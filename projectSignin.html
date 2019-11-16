@@ -18,6 +18,18 @@
 					return false;
 				}
 			}
+			function forgotPassword(){
+				var firstEntry = prompt("Enter a password: ")
+				if (firstEntry == "")
+					alert("Please enter password!")
+				var secondEntry = prompt("Re enter your password: ")
+				if (secondEntry == "")
+					alert("Please enter password!")
+				if (firstEntry == secondEntry)
+					alert("Password changed successfully!")
+				else
+					alert("Passwords do not match")
+			}
 		</script>
 	</head>
 	<body bgcolor="#222222">
@@ -48,7 +60,7 @@
 					</tr>
 				</table><br>
 				<span class="newUser">
-					<a href="projectPassword.html">Forgot your Password?</a><br></span>
+					<a onClick="return forgotPassword()">Forgot your Password?</a><br></span>
 				<span class="newUser">
 					<a href="projectSignUp.html">New to this site? Click here to sign up</a></span>
 			</form>
